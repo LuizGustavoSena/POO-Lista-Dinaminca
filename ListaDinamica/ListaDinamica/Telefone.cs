@@ -9,7 +9,9 @@
         // IMPRESSAO
         public override string ToString()
         {
-            return  Tipo + " (" + Ddd + ")" + Numero + " -- ";
+            if(Ddd != 0)
+                return  "  " + Tipo + " (" + Ddd + ") " + Numero + "\n";
+            return "";
         }
     }
 }

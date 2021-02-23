@@ -12,13 +12,14 @@ namespace ListaDinamica
         public Telefone[] telefone { get; set; }
         public Pessoa Proximo { get; set; }
 
+        // IMPRESSAO
         public override string ToString()
         {
             string fones = "";
             foreach ( Telefone t in telefone)
                 fones = fones + t.ToString();
 
-            return "Nome: "+ Nome + " Telefone: " + fones + "\n";
+            return ">>Contato "+ Nome + "<<\n" + fones + "\n";
         }
     }
 }
