@@ -20,10 +20,25 @@ namespace ListaDinamica
             }
             else
             {
-
+                if(aux.Nome.CompareTo(Tail.Nome) >= 0) // INSERIR NOVO ULTIMO ELEMENTO
+                {
+                    Tail.Proximo = aux;
+                    Tail = aux;
+                }
             }
         }
 
+        public void Print(){
+            if(Vazia())
+                Console.WriteLine("Lista Vazia!");
+            else{
+                Pessoa aux = Head;
+                do{
+                    Console.WriteLine(aux.ToString());
+                    aux = aux.Proximo;
+                }while(aux != null);
+            }
+        }
 
         public bool Vazia()
         {

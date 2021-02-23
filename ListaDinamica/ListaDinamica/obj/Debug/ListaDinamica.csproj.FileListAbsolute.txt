@@ -1,0 +1,7 @@
+C:\Users\Luiz Sena\Source\Repos\LuizGustavoSena\POO-Lista-Dinaminca\ListaDinamica\ListaDinamica\obj\Debug\ListaDinamica.csprojAssemblyReference.cache
+C:\Users\Luiz Sena\Source\Repos\LuizGustavoSena\POO-Lista-Dinaminca\ListaDinamica\ListaDinamica\obj\Debug\ListaDinamica.csproj.CoreCompileInputs.cache
+C:\Users\Luiz Sena\Source\Repos\LuizGustavoSena\POO-Lista-Dinaminca\ListaDinamica\ListaDinamica\bin\Debug\ListaDinamica.exe.config
+C:\Users\Luiz Sena\Source\Repos\LuizGustavoSena\POO-Lista-Dinaminca\ListaDinamica\ListaDinamica\bin\Debug\ListaDinamica.exe
+C:\Users\Luiz Sena\Source\Repos\LuizGustavoSena\POO-Lista-Dinaminca\ListaDinamica\ListaDinamica\bin\Debug\ListaDinamica.pdb
+C:\Users\Luiz Sena\Source\Repos\LuizGustavoSena\POO-Lista-Dinaminca\ListaDinamica\ListaDinamica\obj\Debug\ListaDinamica.exe
+C:\Users\Luiz Sena\Source\Repos\LuizGustavoSena\POO-Lista-Dinaminca\ListaDinamica\ListaDinamica\obj\Debug\ListaDinamica.pdb

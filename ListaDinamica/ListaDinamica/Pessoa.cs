@@ -14,7 +14,11 @@ namespace ListaDinamica
 
         public override string ToString()
         {
-            return "Nome: "+ Nome + "Telefone: " + telefone.ToString() + "\n";
+            string fones = "";
+            foreach ( Telefone t in telefone)
+                fones = fones + t.ToString();
+
+            return "Nome: "+ Nome + " Telefone: " + fones + "\n";
         }
     }
 }
