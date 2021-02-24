@@ -62,16 +62,10 @@ namespace ListaDinamica
             else
             {
                 if(aux.CompareTo(Head.Nome) == 0) { // REMOVER DO INICIO
-                    if(Head.Proximo != null) { // SE TER MAIS ELEMENTOS
-                        Head = Head.Proximo;
-                        Console.WriteLine("Elemento removido no começo");
-                    }
-                    else // SE NÃO TER MAIS ELEMENTOS
-                    {
-                        Head = null;
+                    Head = Head.Proximo;
+                    Console.WriteLine("Elemento removido no começo");
+                    if (Head == null) // SE NÃO TER MAIS ELEMENTOS
                         Tail = null;
-                        Console.WriteLine("Elemento removido e lista passa a ser vazia");
-                    }
                     Qtd--;
                 }
                 else // REMOVER DO MEIO OU FIM
@@ -79,22 +73,21 @@ namespace ListaDinamica
                     // VARIAVEIS
                     Pessoa aux1 = Head;
                     bool encontrou = false;
-                    do
+                    while (aux1.Proximo != null && aux.CompareTo(aux1.Proximo.Nome) >= 0)
                     {
-                        if(aux1.Proximo != null) // SE O PROXIMO EXISTIR
                             if(aux.CompareTo(aux1.Proximo.Nome) == 0) { // COMPARA COM O PROXIMO PARA PODER REMOVER 
-                                if (aux1.Proximo == Tail) // SE O 2° FOR O ULTIMO LINKA O PRIMEIRO A HEAD E TAIL
+                                if (aux1.Proximo == null) // SE FOR O ULTIMO LINKA O NOVO ULTIMO A TAIL
                                     Tail = aux1;
                                 aux1.Proximo = aux1.Proximo.Proximo; // PULA O OBJETO A SER REMOVIDO
-                                Console.WriteLine("Elemento removido no meio");
                                 encontrou = true;
                                 Qtd--;
+                                Console.WriteLine("Elemento removido no meio");
                                 break;
                             }
                         aux1 = aux1.Proximo; // PERCORRER
-                    } while (aux1 != null);
+                    }
 
-                    if (!encontrou)
+                    if (!encontrou) // SE NÃO ENCONTROU CONTATO PARA REMOVER INFORMA AO USUARIO
                         Console.WriteLine("Contato não encontrado");
                 }
             }
